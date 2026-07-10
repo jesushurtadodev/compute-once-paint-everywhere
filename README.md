@@ -49,7 +49,7 @@ wiki/                    The article series (English + Spanish)
 
 ## Who
 
-Built by Jesús Hurtado — 30 years shipping software (BBVA → Sky London → founder), now building AudioRel solo with AI agents and writing about it.
+Built by [Jesús Hurtado](https://www.linkedin.com/in/jesushurtadomolina/) — 30 years shipping software (BBVA → Sky London → founder), now building AudioRel solo with AI agents and writing about it. More at [jesushurtado.dev](https://jesushurtado.dev).
 
 ## License
 
