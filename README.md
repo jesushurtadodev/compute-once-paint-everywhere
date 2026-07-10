@@ -31,7 +31,8 @@ This repo is a journal, not a snapshot. Each chapter is a real production milest
 |---------|------|---------------|-----------|
 | **1. The streak** | 2026-07-10 | One feature shipped across 4 codebases in a day. Pattern validated, playbook + skill codified. Human review caught 3 locale bugs the AI introduced in all 3 clients (Buddhist calendar on iOS, Eastern Arabic digits on Android, UTC merge on web) → rule: *protocol material always uses a fixed locale*. | [playbook.md](playbook.md) · [wiki/post-1](wiki/post-1-the-pattern.md) |
 | **2. The audit** | 2026-07-10 | Asked the agent to close an i18n gap; it discovered the gap didn't exist. 17 stale dictionary JSONs — imported by nothing — had been lying to audits for months. Deliverable: a deletion PR + a unified API client. Lesson: *dead code actively lies to AI audits*. | [wiki/post-2](wiki/post-2-the-audit.md) |
-| **3. The wording trunk** | proposed | Unify UI wording into one trunk (backend constants) feeding all three clients; bottom-up flow becomes explicit *promotion* enforced by an orphan-key linter — never automated write-back. | (coming) |
+| **3. The heartbeat** | 2026-07-10 | Stood up three-layer observability in one afternoon: errors (Sentry, verified by *injecting* synthetic events — silence is not success), uptime (a 15-min GitHub Action managing one deduped alert issue), and product heartbeat (Amplitude monitors built agent-side via MCP). The data killed two designs before they shipped: a sign-up monitor (2 sign-ups/month — nothing to monitor) and per-PR mobile E2E (macOS runners bill 10× on private repos). | [wiki/post-3](wiki/post-3-the-heartbeat.md) |
+| **4. The wording trunk** | proposed | Unify UI wording into one trunk (backend constants) feeding all three clients; bottom-up flow becomes explicit *promotion* enforced by an orphan-key linter — never automated write-back. | (coming) |
 
 ## What's in the box
 
