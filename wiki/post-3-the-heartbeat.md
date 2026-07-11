@@ -1,5 +1,7 @@
 # Post 3 — The Heartbeat
 
+![Three layers, because three different things can die](assets/ch3-hero.png)
+
 *Chapter 3 of the series. Published on LinkedIn; canonical copy here.*
 
 ---

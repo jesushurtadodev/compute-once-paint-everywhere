@@ -1,5 +1,7 @@
 # Post 2 — The Audit That Destroyed Its Own Finding
 
+![The investigation](assets/ch2-hero.png)
+
 *Chapter 2 of the series. Published on LinkedIn; canonical copy here.*
 
 ---

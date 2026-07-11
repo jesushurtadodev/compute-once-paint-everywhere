@@ -1,5 +1,7 @@
 # Post 1 — The Pattern
 
+![The server computes. The clients just paint.](assets/ch1-hero.png)
+
 *Chapter 1 of the series. Published on LinkedIn; canonical copy here.*
 
 ---
