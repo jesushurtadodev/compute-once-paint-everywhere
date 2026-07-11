@@ -45,6 +45,27 @@ Banned: mystery without payoff ("You won't believe…"), empty promises ("This
 ONE trick"), any hook paragraph 2 doesn't cash. **The test**: would a skeptical
 senior engineer click AND not feel cheated afterwards? Both, always.
 
+## The mother rule: clickbait WITH the receipt
+
+The headline stops the scroll; the data earns the trust. A headline with no
+receipt is vapor; a receipt with no headline goes unread. Both together is the
+rare part — and the whole edge of this series. RULE: every big claim in the
+post is anchored to verifiable evidence, screenshot-able where possible:
+
+| Claim (the hook) | Receipt (the data/image) |
+|---|---|
+| "114 PRs in a week" | the `gh pr list` that counts them |
+| "it froze mid-sentence" | the screenshot of the quota at 100%, in red |
+| "it cost €20" | balance €180.63 → €160.52, captured |
+| "it caught a real bug" | the 404 loop + its 3-line fix |
+| "dead code lies" | the `grep` with no results |
+| "silence is not success" | the synthetic event you had to inject |
+
+Cost IS post material, not a weakness: giving the MARGINAL cost (the overage
+above a flat subscription) reads stronger than the total, and anchoring it to a
+deliverable ("€20 for the round that caught the 404") ties price to value. The
+reader finishes the comparison themselves ("€20 vs. an hour of a senior").
+
 ## The honesty that makes clickbait credible
 
 - Tell what you did NOT build, and why (the unmonitorable metric, the tool
