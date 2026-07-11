@@ -40,6 +40,7 @@ This repo is a journal, not a snapshot. Each chapter is a real production milest
 ```
 playbook.md              The pattern in full: principles, preconditions, case studies, anti-patterns
 skill/feature-xplat.md   Claude Code skill: the playbook as an executable, step-by-step agent workflow
+skill/cope-post.md       Claude Code skill: how the chapters + posts themselves get written (structure, honest clickbait, visual signature)
 wiki/                    The article series (English + Spanish)
 ```
 
