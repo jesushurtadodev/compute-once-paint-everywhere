@@ -67,3 +67,41 @@ Moves one feature through all four layers using the pattern validated in product
 | `limit(N)` as a time window | Undercounted data for heavy users |
 | Trusting the HTTP 200 | A "working" write stored the doc under the wrong user ID |
 | Device locale on protocol material | Buddhist calendar, Eastern Arabic digits, UTC drift — one per platform |
+
+
+## Definition of Done (non-negotiable) — same user, three surfaces
+
+A cross-platform feature is NOT "done" because each client builds and works in
+isolation. It's done when an **automated test proves the same authenticated user
+performs the action identically across all three surfaces AND state written on
+one surface renders on the other two.** Because the backend is the single source
+of truth, this is the only test that actually validates the pattern.
+
+- **Web** → Playwright · **iOS/Android** → Maestro.
+- **Shared test identity**: one dedicated user/token all three automations reuse
+  (a custom token, or a sandbox user). Without shared identity you don't test
+  the crossing.
+- **Canonical scenario = write on A, assert on B and C**: favorite a story on
+  web → assert it appears favorited on iOS and Android for the same UID (source
+  of truth: `userFavorites/{uid}`). Same shape for onboarding prefs, creation.
+- Verify the DATA in the destination system (DB/CRM/analytics), not just the 200
+  or one platform's UI.
+
+**Honest corollary**: "verified in the Android emulator + iOS build + web
+browser" is *per-platform verification* — one rung below the DoD. Name the
+difference; don't mark "done" until the cross-user test passes. The bugs that
+break the crossing (a non-canonical key, divergent event props, a CORS preflight
+only the browser exercises) are invisible to per-platform verification.
+
+## The analytics contract (event props ARE the contract)
+
+Event properties are part of the contract. Real divergences caught in review:
+- position 0-based on one client, 1-based on another (a prompt bug).
+- a source field hardcoded differently per platform.
+- values as LOCALIZED labels on one client ("sleepy dragon" vs "dragón dormilón"
+  never group) vs stable IDs on another.
+- an intent event fired only after the server 202 on some clients (undercounting
+  rate-limits and network failures) vs at-tap on others.
+**Canon**: identical names · values = stable IDs (never labels) · intent events
+at-tap · spell out name+props+values with examples in the agent's prompt · diff
+all three clients at once.

@@ -97,6 +97,24 @@ Lessons:
 - An agent that verifies its own findings against production before implementing is worth twice one that follows orders.
 - Sometimes the best PR removes lines.
 
+## Definition of Done: same user, three surfaces
+
+The "server computes, clients paint" pattern is only PROVEN when an automated
+test shows they paint identically for the same user. DoD:
+
+> A cross-platform feature is done when an automated test (Playwright web +
+> Maestro iOS/Android, one shared test identity) proves the same user performs
+> the action identically on all three AND state written on one surface appears
+> on the other two.
+
+Canonical example — **favorites**: favorite on web → the test asserts the card
+shows favorited on iOS and Android for the same UID (source of truth is
+`userFavorites/{uid}`). If that isn't automated, the feature is "verified
+per-platform", not "done". The bugs that break the crossing (a non-canonical
+favorite key, an event with divergent props, a CORS preflight only the browser
+sees) are invisible to per-platform verification — only the cross-user test
+catches them, and it's the proof that gives the whole pattern meaning.
+
 ## Anti-patterns (all of these actually bit us)
 
 | Anti-pattern | Real consequence |
