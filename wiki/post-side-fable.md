@@ -30,11 +30,15 @@ Every stumble became a codified trigger — in memory files, wikis, executable s
 
 **And the honest part** — because this series doesn't do hype: mid-review, one of the two sessions hit its usage ceiling. Frozen, mid-sentence, findings half-delivered. The other session picked up its unfinished review and completed the round. That's the actual state of the art in 2026: genuinely brilliant, and still bounded — by quotas, by context, and by needing a human who knows what "good" looks like. The locale bugs it introduced across three platforms? A human review caught those.
 
-**And the receipt — literally.** This series doesn't do hype, so here's the meter. The flat subscription (Max plan) covered the bulk of those 114 PRs. Mid-review, the weekly Fable allowance hit 100% and one session froze — frozen mid-sentence, findings half-delivered. The overage, billed pay-as-you-go, to finish the cross-platform review and apply the fixes across three codebases: **about €20** (balance €180.63 → €160.52). Twenty euros for a round that caught a real production bug — a 404 loop that would've shown users an infinite spinner — plus two analytics divergences across iOS, Android and web. That's the actual state of the art in 2026: genuinely brilliant, still bounded — by quotas, by context, by needing a human who knows what "good" looks like. The locale bugs it introduced across three platforms? A human review caught those. Now weigh €20 of overage against an hour of a senior engineer's time, and the math writes the post.
+**And the receipt — literally.** This series doesn't do hype, so here's the meter. The flat subscription (Max plan) covered the bulk of those 114 PRs. Mid-review, the weekly Fable allowance hit 100% and one session froze — mid-sentence, findings half-delivered. The overage to finish that cross-platform review and apply the fixes across three codebases, billed pay-as-you-go: **about €20** (balance €180.63 → €160.52). Twenty euros for a round that caught a real production bug — a 404 loop that would've shown users an infinite spinner — plus two analytics divergences across iOS, Android and web.
 
-Fable didn't replace my judgment. It multiplied it by 114.
+**Here's the other half of the receipt:** that was €20 in five minutes. Worth it for catching a live bug? Absolutely. As a *rate*, for how I actually work day to day? A no-go. So I'm moving the bulk back to **Opus 4.8** on the flat plan, and keeping pay-as-you-go Fable for the bursts that earn it.
 
-What would your week look like with a second engineer who never sleeps — and never says yes to be polite?
+Genuinely brilliant, still bounded — by quotas, by context, by needing a human who knows what "good" looks like, and now by my own wallet. The locale bugs it introduced across three platforms? A human review caught those. That's the honest state of the art in 2026.
+
+And the part that isn't on the meter: this week I got **my first Android app ever** under my belt. Thank you, Anthropic. 🙏
+
+What would your week look like with a second engineer who never sleeps — as long as you keep one eye on the meter?
 
 ---
 
@@ -61,11 +65,15 @@ Cada tropiezo quedó codificado como trigger — en memoria, wikis, skills ejecu
 
 **Y la parte honesta** — porque esta serie no hace hype: a mitad de una ronda de review, una de las dos sesiones agotó su cupo de uso. Congelada, a media frase, con los hallazgos a medio entregar. La otra sesión recogió su review inacabada y completó la ronda. Ese es el estado del arte real en 2026: genuinamente brillante, y todavía acotado — por cuotas, por contexto, y por necesitar un humano que sepa qué aspecto tiene "bien hecho". ¿Los bugs de locale que introdujo en tres plataformas? Los cazó una review humana.
 
-**Y el recibo — literal.** Esta serie no hace hype, así que aquí está el contador. La suscripción plana (plan Max) cubrió el grueso de esos 114 PRs. A mitad de una review, la cuota semanal de Fable llegó al 100% y una sesión se congeló — a media frase, con los hallazgos a medio entregar. El excedente, facturado por uso, para terminar la review cross-platform y aplicar los fixes en tres codebases: **unos 20 €** (saldo 180,63 € → 160,52 €). Veinte euros por una ronda que cazó un bug real de producción — un bucle de 404 que habría dejado a los usuarios con un spinner infinito — más dos divergencias de analytics entre iOS, Android y web. Ese es el estado del arte real en 2026: genuinamente brillante, todavía acotado — por cuotas, por contexto, por necesitar un humano que sepa qué aspecto tiene "bien hecho". ¿Los bugs de locale que introdujo en tres plataformas? Los cazó una review humana. Ahora pon esos 20 € de excedente frente a una hora de un ingeniero senior, y las cuentas escriben el post solas.
+**Y el recibo — literal.** Esta serie no hace hype, así que aquí está el contador. La suscripción plana (plan Max) cubrió el grueso de esos 114 PRs. A mitad de una review, la cuota semanal de Fable llegó al 100% y una sesión se congeló — a media frase, con los hallazgos a medio entregar. El excedente para terminar esa review cross-platform y aplicar los fixes en tres codebases, facturado por uso: **unos 20 €** (saldo 180,63 € → 160,52 €). Veinte euros por una ronda que cazó un bug real de producción — un bucle de 404 que habría dejado a los usuarios con un spinner infinito — más dos divergencias de analytics entre iOS, Android y web.
 
-Fable no sustituyó mi criterio. Lo multiplicó por 114.
+**Y la otra mitad del recibo:** fueron 20 € en cinco minutos. ¿Valió la pena por cazar un bug en producción? Sin duda. ¿Como *tarifa*, para cómo trabajo día a día? Un no-go. Así que muevo el grueso de vuelta a **Opus 4.8** en el plan plano, y me guardo el pago-por-uso de Fable para los picos que lo merecen.
 
-¿Cómo sería tu semana con un segundo ingeniero que nunca duerme — y nunca dice que sí por educación?
+Genuinamente brillante, todavía acotado — por cuotas, por contexto, por necesitar un humano que sepa qué aspecto tiene "bien hecho", y ahora por mi propia cartera. ¿Los bugs de locale que introdujo en tres plataformas? Los cazó una review humana. Ese es el estado del arte honesto en 2026.
+
+Y la parte que no está en el contador: esta semana me llevo **mi primera app de Android** de la vida. Gracias, Anthropic. 🙏
+
+¿Cómo sería tu semana con un segundo ingeniero que nunca duerme — mientras no le quites el ojo al contador?
 
 ---
 
