@@ -1,0 +1,90 @@
+[
+  {
+    "id": "the-boy-who-cried-wolf",
+    "title": "The Boy Who Cried Wolf",
+    "synopsis": "A shepherd boy repeatedly tricks nearby villagers into thinking a wolf is attacking his flock. When a wolf really appears, no one believes his cries and the sheep are lost.",
+    "acceptableThemes": [
+      "honesty",
+      "truth",
+      "trust",
+      "consequences"
+    ]
+  },
+  {
+    "id": "tortoise-and-the-hare",
+    "title": "The Tortoise and the Hare",
+    "synopsis": "An overconfident hare mocks a slow tortoise and challenges him to a race. The hare naps mid-race certain of winning, while the tortoise plods on steadily and crosses the finish line first.",
+    "acceptableThemes": [
+      "perseverance",
+      "humility",
+      "patience",
+      "determination"
+    ]
+  },
+  {
+    "id": "cinderella",
+    "title": "Cinderella",
+    "synopsis": "A kind girl mistreated by her stepmother and stepsisters dreams of attending the royal ball. With help she goes, loses a glass slipper at midnight, and the prince searches the kingdom to find her.",
+    "acceptableThemes": [
+      "kindness",
+      "hope",
+      "perseverance",
+      "transformation"
+    ]
+  },
+  {
+    "id": "the-ugly-duckling",
+    "title": "The Ugly Duckling",
+    "synopsis": "A duckling ridiculed for looking different from his siblings wanders alone through the seasons, until he grows up and discovers he was a beautiful swan all along.",
+    "acceptableThemes": [
+      "acceptance",
+      "identity",
+      "belonging",
+      "self acceptance"
+    ]
+  },
+  {
+    "id": "little-red-riding-hood",
+    "title": "Little Red Riding Hood",
+    "synopsis": "A girl walking to her grandmother’s house through the woods talks to a cunning wolf who tricks her, reaches the house first, and disguises himself. She must use her wits to escape danger.",
+    "acceptableThemes": [
+      "cleverness",
+      "safety and caution",
+      "be careful with strangers",
+      "listen to trusted adults"
+    ]
+  },
+  {
+    "id": "the-lion-and-the-mouse",
+    "title": "The Lion and the Mouse",
+    "synopsis": "A mighty lion spares a tiny mouse who promises to repay him one day. Later the lion is trapped in a hunter’s net, and the small mouse gnaws through the ropes to set him free.",
+    "acceptableThemes": [
+      "kindness",
+      "gratitude",
+      "friendship",
+      "helping others"
+    ]
+  },
+  {
+    "id": "hansel-and-gretel",
+    "title": "Hansel and Gretel",
+    "synopsis": "Two siblings abandoned in the forest find a house made of candy belonging to a witch who traps them. Working together and thinking cleverly, they outwit her and find their way home.",
+    "acceptableThemes": [
+      "cleverness",
+      "bravery",
+      "family",
+      "resilience"
+    ]
+  },
+  {
+    "id": "the-little-mermaid",
+    "title": "The Little Mermaid",
+    "synopsis": "A young mermaid falls in love with a human prince and trades her voice to a sea witch for legs, sacrificing everything she knows for a chance at a life on land.",
+    "acceptableThemes": [
+      "love",
+      "sacrifice",
+      "transformation",
+      "dreams"
+    ]
+  }
+]

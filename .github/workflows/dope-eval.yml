@@ -1,0 +1,50 @@
+name: dope-eval
+
+# The eval rung as a CI gate. Runs the scored eval suite and fails the build if
+# the aggregate score drops below the threshold in each eval.config.js.
+#
+# Requires an OPENAI_API_KEY repo secret (Settings → Secrets → Actions). Without
+# it the job is skipped, not red — an eval you can't run shouldn't block a docs PR.
+
+on:
+  push:
+    paths: ['dope-eval/**']
+  pull_request:
+    paths: ['dope-eval/**']
+  workflow_dispatch:
+
+jobs:
+  eval:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dope-eval
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Guard — API key present
+        id: guard
+        run: |
+          if [ -z "${{ secrets.OPENAI_API_KEY }}" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::OPENAI_API_KEY secret not set — skipping dope-eval gate."
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Install
+        if: steps.guard.outputs.run == 'true'
+        run: npm install --no-audit --no-fund
+      - name: Run theme-suggestion eval (gate)
+        if: steps.guard.outputs.run == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: node run.js theme-suggestion
+      - name: Upload report
+        if: steps.guard.outputs.run == 'true' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dope-eval-report
+          path: dope-eval/reports/*.json
+          if-no-files-found: ignore
