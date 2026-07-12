@@ -1,0 +1,16 @@
+{
+  "name": "dope-orchestrate",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Multi-agent refutation + consensus harness. Fan out skeptics (each a distinct lens) to try to REFUTE a claim; a claim survives only if it withstands them. Agentic backend on the Claude Agent SDK; stateless backend on the Vercel AI SDK.",
+  "bin": { "dope-orchestrate": "run.js" },
+  "scripts": {
+    "verify": "node run.js"
+  },
+  "dependencies": {
+    "@ai-sdk/openai": "^2.0.0",
+    "@anthropic-ai/claude-agent-sdk": "^0.3.0",
+    "ai": "^5.0.0",
+    "zod": "^4.0.0"
+  }
+}
