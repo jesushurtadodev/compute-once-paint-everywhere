@@ -58,7 +58,7 @@ DOPE isn't only a shape; it's a two-phase loop from a need to a shipped, proven 
 **Input:** a need, in the user's voice.
 **Output, before a line of client code:**
 - **The contract** — the single server-side decision (the *Decide Once*): its signature, its shape, its rules. The thing all clients will mirror. (Never return a raw `Date`; inject `now`/`tz`; no side effects in reads.)
-- **The QA plan** — the Gherkin (`Given / When / Then`) and the four-rung validation plan: *which* unit, contract, render and guardian tests will prove it done.
+- **The QA plan** — the Gherkin (`Given / When / Then`) and the validation plan: *which* unit, contract, render and guardian tests will prove it done — **plus an eval rung when a decision's output is produced by a model**.
 
 PLAN is where *contract-before-code* and *acceptance-test-before-implementation* live. You write **how you'll prove it DONE before you write it.** It's a thinking phase — cheap to redo, and the place a human reviews the shape *before* it multiplies across three clients.
 
@@ -70,14 +70,14 @@ PLAN is where *contract-before-code* and *acceptance-test-before-implementation*
 - **Clients** — the mirrors: each surface renders the contract (*Paint Everywhere*), born tolerating that the endpoint may not exist yet.
 - **The proof, run** — unit → contract → render → guardian.
 
-**Exit gate: DopeDone.** Not "it builds" — all four rungs green. (`/dope-code` is the evolution of the [`/feature-xplat`](skill/feature-xplat.md) skill.)
+**Exit gate: DopeDone.** Not "it builds" — every mandatory rung green (the four, plus the eval rung when a decision is model-produced). (`/dope-code` is the evolution of the [`/feature-xplat`](skill/feature-xplat.md) skill.)
 
 ### The symmetry
 
 | Phase | Decide / Paint | Proof |
 |---|---|---|
 | **DOPE-PLAN** | *Decide Once* — write the contract | **define** DONE — Gherkin + validation plan |
-| **DOPE-CODE** | *Paint Everywhere* — mirror it on every client | **prove** DopeDone — run the four rungs |
+| **DOPE-CODE** | *Paint Everywhere* — mirror it on every client | **prove** DopeDone — run the rungs (four, + eval when a model decides) |
 
 PLAN decides and defines the proof; CODE paints and runs it. The whole loop is gated by one question: *is it DopeDone?*
 
@@ -99,13 +99,14 @@ Every user story carries five things. Ideally the story is written **before** th
 2. **Gherkin** — `Given / When / Then`. The behavior contract, executable.
 3. **Problem it solves** — why it's worth the money and the risk.
 4. **The shared contract** — the single server-side decision the clients mirror (the *Decide Once*).
-5. **Validations for DONE** — the automated proofs, in four rungs:
+5. **Validations for DONE** — the automated proofs, in four rungs — plus a fifth when a decision's output is **produced by a model**:
    - **Unit** — the pure decision function, every edge case (including all supported locales).
    - **Contract** — the *data* converges: the same identity, hit with each client's real payload, resolves to the same server truth. Headless, seconds.
    - **Render** — the *pixels* converge: the same seeded user does it on web (Playwright) and iOS/Android (Maestro), and state written on one surface appears on the others.
    - **Guardian** — the server rejects a bypassed client.
+   - **Eval** *(only when the decision's output comes from a model — an LLM, image/audio generation, a Genkit flow)* — a **scored** eval, not a pass/fail test, because you can't `assertEqual` non-deterministic output. Golden set + rubric + threshold (human-set, once); deterministic invariants asserted first; the semantic judgment by an **LLM-as-judge that must cite evidence** (a `pass` with none is rejected); gated in CI. Detail: [`/dope-plan`](skill/dope-plan.md) STEP 4.
 
-   The story is DONE only when all four are green. "Builds on three platforms" is one rung below — it's *per-platform verification*, not DONE.
+   The story is DONE only when all **mandatory** rungs are green — and the eval rung is mandatory whenever a decision is model-produced. "Builds on three platforms" is one rung below — it's *per-platform verification*, not DONE.
 
 ---
 
