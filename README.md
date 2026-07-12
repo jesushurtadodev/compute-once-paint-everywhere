@@ -25,7 +25,14 @@ That wasn't luck. It worked because the codebase was **architected for agents**:
 3. **Graceful fallback decouples merges from deploys.** Every client is born tolerating that its endpoint doesn't exist yet. PRs land in any order; the switch to server data is automatic and invisible.
 4. **Review redesigns before multiplying.** A cross-platform feature multiplies whatever you build by 4 — including design mistakes. Human review of the backend contract happens *before* the three clients are written.
 
-Full detail: **[playbook.md](playbook.md)** · Executable version: **[skill/feature-xplat.md](skill/feature-xplat.md)**
+Full detail: **[the paper](PAPER.md)** · **[playbook.md](playbook.md)**
+
+### The lifecycle: PLAN → CODE, gated by DopeDone
+
+DOPE runs as a two-phase loop, each an executable skill:
+
+- **[`/dope-plan`](skill/dope-plan.md)** — a need → the **contract** (the one server-side decision) + the **QA plan** (Gherkin + the four-rung proof). No client code; you define how you'll prove it DONE before you write it.
+- **[`/dope-code`](skill/dope-code.md)** — execute the contract on the server + mirror it on every client, then run the four rungs (unit → contract → render → guardian) until **DopeDone**. (Evolves [`/feature-xplat`](skill/feature-xplat.md).)
 
 ## Evolution log
 
@@ -43,8 +50,11 @@ This repo is a journal, not a snapshot. Each chapter is a real production milest
 ## What's in the box
 
 ```
+PAPER.md                 What DOPE is, DOPE vs microservices, and the DopeDone method (Gherkin + 4-rung DONE)
 playbook.md              The pattern in full: principles, preconditions, case studies, anti-patterns
-skill/feature-xplat.md   Claude Code skill: the playbook as an executable, step-by-step agent workflow
+skill/dope-plan.md       Claude Code skill: PLAN phase — need → contract + QA plan
+skill/dope-code.md       Claude Code skill: CODE phase — execute + prove until DopeDone (evolves feature-xplat)
+skill/feature-xplat.md   Claude Code skill: the original cross-platform fan-out (now the core of /dope-code)
 skill/cope-post.md       Claude Code skill: how the chapters + posts themselves get written (structure, honest clickbait, visual signature)
 wiki/                    The article series (English + Spanish)
 ```

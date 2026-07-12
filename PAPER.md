@@ -49,6 +49,40 @@ Where they **differ** most sharply: on the **decision layer**, DOPE is the *oppo
 
 ---
 
+## The DOPE lifecycle: PLAN → CODE
+
+DOPE isn't only a shape; it's a two-phase loop from a need to a shipped, proven feature. The phases split along the same seam as the architecture — decide, then paint; define the proof, then run it. Each phase is an executable skill: [`/dope-plan`](skill/dope-plan.md) and [`/dope-code`](skill/dope-code.md).
+
+### DOPE-PLAN — analyze the need → the contract + the QA plan
+
+**Input:** a need, in the user's voice.
+**Output, before a line of client code:**
+- **The contract** — the single server-side decision (the *Decide Once*): its signature, its shape, its rules. The thing all clients will mirror. (Never return a raw `Date`; inject `now`/`tz`; no side effects in reads.)
+- **The QA plan** — the Gherkin (`Given / When / Then`) and the four-rung validation plan: *which* unit, contract, render and guardian tests will prove it done.
+
+PLAN is where *contract-before-code* and *acceptance-test-before-implementation* live. You write **how you'll prove it DONE before you write it.** It's a thinking phase — cheap to redo, and the place a human reviews the shape *before* it multiplies across three clients.
+
+### DOPE-CODE — execute the contract → prove it everywhere
+
+**Input:** the contract + the QA plan.
+**Output:**
+- **Server** — the pure decision function + its unit tests, plus the guardian that rejects a bypassed client.
+- **Clients** — the mirrors: each surface renders the contract (*Paint Everywhere*), born tolerating that the endpoint may not exist yet.
+- **The proof, run** — unit → contract → render → guardian.
+
+**Exit gate: DopeDone.** Not "it builds" — all four rungs green. (`/dope-code` is the evolution of the [`/feature-xplat`](skill/feature-xplat.md) skill.)
+
+### The symmetry
+
+| Phase | Decide / Paint | Proof |
+|---|---|---|
+| **DOPE-PLAN** | *Decide Once* — write the contract | **define** DONE — Gherkin + validation plan |
+| **DOPE-CODE** | *Paint Everywhere* — mirror it on every client | **prove** DopeDone — run the four rungs |
+
+PLAN decides and defines the proof; CODE paints and runs it. The whole loop is gated by one question: *is it DopeDone?*
+
+---
+
 ## DopeDone: a story isn't done because it builds
 
 DOPE tells you *where* a decision lives. **DONE** tells you *how you prove* the story shipped correctly across every surface. The two are inseparable — the reason to centralize the decision is so you can write **one** proof that all clients honor it — and together they earn a verb: **DopeDone**.
