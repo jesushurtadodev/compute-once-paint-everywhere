@@ -3,6 +3,8 @@
 > Encaja como interludio de la serie (entre el post 2 y el 3, o tras el 3).
 > Los números son reales y verificables a fecha 2026-07-11.
 
+![€20 of AI review caught a live production bug this week — the receipt: 114 PRs, one human + Fable, €180.63 → €160.52](assets/fable-receipt-hero.png)
+
 ---
 
 ## English

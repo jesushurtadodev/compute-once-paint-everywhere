@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 675px; }
+  body {
+    background: #0a0e17;
+    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #e8eaf0; position: relative; overflow: hidden;
+  }
+  .mono { font-family: "SF Mono", "JetBrains Mono", "Menlo", monospace; }
+  .wrap { padding: 42px 64px 0; }
+  h1 { font-size: 39px; font-weight: 800; text-align: center; letter-spacing: -0.5px; }
+  h1 .eur { color: #7ee2a0; }
+  .sub { text-align: center; color: #8b91a3; font-size: 16px; margin-top: 11px; }
+  .sub b { color: #b39ddb; font-weight: 600; }
+
+  .receipt {
+    margin: 32px auto 0; width: 720px;
+    background: #12141f; border: 1px solid #24283a; border-radius: 14px;
+    padding: 24px 30px; font-size: 16px; line-height: 1.9;
+  }
+  .receipt .hd { color: #b39ddb; font-weight: 700; letter-spacing: 1px; font-size: 14px; }
+  .receipt .rule { border-top: 1px dashed #333a4d; margin: 12px 0; }
+  .receipt .li { display: flex; justify-content: space-between; }
+  .receipt .k { color: #8b91a3; }
+  .receipt .v { color: #e8eaf0; }
+  .receipt .v b { color: #7ee2a0; }
+  .receipt .caught { color: #cfe9d6; }
+  .receipt .caught .x { color: #f0a0a0; font-weight: 700; }
+  .receipt .cap { color: #f0c674; font-size: 14px; }
+
+  .foot {
+    position: absolute; bottom: 24px; left: 0; right: 0; text-align: center;
+    font-size: 15px; color: #8b91a3; padding: 0 40px;
+  }
+  .foot b { color: #e8eaf0; font-weight: 700; }
+
+  .spectrum { position: absolute; bottom: 0; left: 0; right: 0; height: 8px; display: flex; }
+  .spectrum span { flex: 1; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1><span class="eur">€20</span> of AI review caught a live production bug this week.</h1>
+    <div class="sub">114 PRs · one human + Claude Fable · <b>the receipt, not the hype</b></div>
+
+    <div class="receipt mono">
+      <div class="hd">CLAUDE FABLE 5 — WEEKLY REVIEW</div>
+      <div class="rule"></div>
+      <div class="li"><span class="k">PRs merged to main</span><span class="v"><b>114</b> · 1 human + Fable</span></div>
+      <div class="li"><span class="k">balance</span><span class="v">€180.63 → €160.52</span></div>
+      <div class="li"><span class="k">overage (pay-as-you-go)</span><span class="v"><b>~€20</b></span></div>
+      <div class="cap">↳ weekly cap hit mid-review — the other session finished it</div>
+      <div class="rule"></div>
+      <div class="caught"><span class="x">caught</span> &nbsp;a 404 loop (users saw an infinite spinner, live)</div>
+      <div class="caught"><span class="x">caught</span> &nbsp;2 analytics divergences across iOS · Android · web</div>
+    </div>
+  </div>
+
+  <div class="foot"><b>€20 vs. an hour of a senior engineer</b> — and the math writes the post. Genuinely brilliant, still bounded — by quotas, context, and a human who knows what "good" looks like.</div>
+
+  <div class="spectrum">
+    <span style="background:#e53935"></span>
+    <span style="background:#fdd835"></span>
+    <span style="background:#43a047"></span>
+    <span style="background:#29b6f6"></span>
+  </div>
+</body>
+</html>
