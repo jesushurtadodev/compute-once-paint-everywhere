@@ -1,7 +1,7 @@
 # /cope-post — Write a chapter + LinkedIn post for your build-in-public series
 
 > A [Claude Code](https://claude.com/claude-code) skill: the style guide behind
-> the *Compute Once, Paint Everywhere* series, as an executable workflow.
+> the *DOPE* series, as an executable workflow.
 > Drop into `.claude/commands/cope-post.md` and run `/cope-post <what happened>`.
 > Adapt names and paths; keep the rules.
 

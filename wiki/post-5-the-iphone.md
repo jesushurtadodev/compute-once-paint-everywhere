@@ -12,7 +12,7 @@
 
 **We were storing the product on a customer's iPhone.**
 
-The fix was a refactor that ate a feature off our roadmap. Chapter five of the Compute Once, Paint Everywhere series at AudioRel.
+The fix was a refactor that ate a feature off our roadmap. Chapter five of the DOPE series at AudioRel.
 
 Context: our iOS funnel creates personalized bedtime stories — your child's name, three magical elements, and AI writes and illustrates a story where they're the hero. It shipped fast. Parents loved it. And the AI generation ran on our servers, so we thought we were following our own pattern.
 
@@ -52,7 +52,7 @@ What's living on your users' devices right now, quietly thinking it's a database
 
 **Guardábamos el producto en el iPhone de un cliente.**
 
-El arreglo fue un refactor que se comió una feature del roadmap. Quinto capítulo de la serie Compute Once, Paint Everywhere en AudioRel.
+El arreglo fue un refactor que se comió una feature del roadmap. Quinto capítulo de la serie DOPE en AudioRel.
 
 Contexto: nuestro funnel de iOS crea cuentos personalizados — el nombre de tu peque, tres elementos mágicos, y la IA escribe e ilustra un cuento donde él es el héroe. Salió rápido. A los padres les encantó. Y la generación corría en nuestros servidores, así que creíamos estar siguiendo nuestro propio patrón.
 

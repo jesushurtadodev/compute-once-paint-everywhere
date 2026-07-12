@@ -10,7 +10,7 @@
 
 **Your uptime is 100%. Is anyone listening?**
 
-Chapter three of the **Compute Once, Paint Everywhere** series at AudioRel.
+Chapter three of the **DOPE** series at AudioRel.
 
 Yesterday one engineer + one AI agent stood up a complete observability stack for a production platform (backend + iOS + Android + web) in a single afternoon. Three layers, because three different things can die:
 
@@ -39,7 +39,7 @@ What's watching YOUR product's heartbeat — or just its pulse?
 
 **Tu uptime es 100%. ¿Hay alguien escuchando?**
 
-Tercer capítulo de la serie **Compute Once, Paint Everywhere** en AudioRel.
+Tercer capítulo de la serie **DOPE** en AudioRel.
 
 Ayer un ingeniero + un agente de IA levantaron el stack de observabilidad completo de una plataforma en producción (backend + iOS + Android + web) en una tarde. Tres capas, porque pueden morir tres cosas distintas:
 

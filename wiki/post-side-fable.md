@@ -9,7 +9,7 @@
 
 **114 pull requests hit main this week. The engineering team is one human — and a model called Fable.**
 
-A sidebar to the Compute Once, Paint Everywhere series: people keep asking what actually changed. Not "AI helps me code" — that's been true for two years. This week, with Claude Fable 5, five things were different. Each one comes with a receipt.
+A sidebar to the DOPE series: people keep asking what actually changed. Not "AI helps me code" — that's been true for two years. This week, with Claude Fable 5, five things were different. Each one comes with a receipt.
 
 **1. Autonomy that survives the boring parts.**
 It didn't just write features — it waited for CI, merged, watched deploys, and when a deploy silently broke (a GitHub username rename severed the pipeline), it noticed, diagnosed and routed around it. The unglamorous 80% of shipping, handled.
@@ -40,7 +40,7 @@ What would your week look like with a second engineer who never sleeps — and n
 
 **114 pull requests han llegado a main esta semana. El equipo de ingeniería es un humano — y un modelo llamado Fable.**
 
-Un interludio de la serie Compute Once, Paint Everywhere: me preguntan qué ha cambiado de verdad. No es "la IA me ayuda a programar" — eso lleva dos años siendo cierto. Esta semana, con Claude Fable 5, cinco cosas fueron distintas. Cada una con su recibo.
+Un interludio de la serie DOPE: me preguntan qué ha cambiado de verdad. No es "la IA me ayuda a programar" — eso lleva dos años siendo cierto. Esta semana, con Claude Fable 5, cinco cosas fueron distintas. Cada una con su recibo.
 
 **1. Autonomía que sobrevive a las partes aburridas.**
 No solo escribió features — esperó CIs, mergeó, vigiló deploys, y cuando un deploy se rompió en silencio (un rename de usuario de GitHub cortó el pipeline), lo notó, lo diagnosticó y lo rodeó. El 80% poco glamuroso de shippear, resuelto.

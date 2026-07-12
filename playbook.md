@@ -1,4 +1,4 @@
-# The Playbook — Compute Once, Paint Everywhere
+# The Playbook — DOPE (Decide Once, Paint Everywhere)
 
 How a feature moves through four layers (backend + Android + iOS + web) without the platforms drifting apart. Pattern validated in production on 2026-07-10 with the listening-streak system (case study 1 below). Executable version: [skill/feature-xplat.md](skill/feature-xplat.md).
 

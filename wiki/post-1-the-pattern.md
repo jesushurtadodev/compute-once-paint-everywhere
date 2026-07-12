@@ -12,7 +12,7 @@
 
 Last week at AudioRel we shipped a unified listening streak (Duolingo's 🔥, but for children's audiobooks): backend + iOS + Android + web, with a monthly calendar and marketing attributes kept in sync.
 
-The interesting part isn't the feature. It's the architecture that made it possible, which we've named **Compute Once, Paint Everywhere**:
+The interesting part isn't the feature. It's the architecture that made it possible, which we've named **DOPE — Decide Once, Paint Everywhere** (we first called it *Compute Once*, until validations, gates and canonicalizations turned out to be the same shape — compute was just the first case):
 
 🧠 **The server computes, the clients paint.**
 All streak logic (timezones, gaps, navigable months) lives in ONE pure function on the backend, with 16 tests. The three clients just receive numbers and render them. Zero duplicated logic = zero drift between platforms.
@@ -40,7 +40,7 @@ How do you keep platform parity in your teams?
 
 La semana pasada lanzamos en AudioRel una racha de escucha unificada (el 🔥 de Duolingo, pero para cuentos infantiles): backend + iOS + Android + web, con calendario mensual y atributos de marketing sincronizados.
 
-Lo interesante no es la feature. Es la arquitectura que lo hizo posible, que hemos bautizado **Compute Once, Paint Everywhere**:
+Lo interesante no es la feature. Es la arquitectura que lo hizo posible, que hemos bautizado **DOPE — Decide Once, Paint Everywhere** (al principio la llamábamos *Compute Once*, hasta que las validaciones, los gates y las canonicalizaciones resultaron ser la misma forma — computar era solo el primer caso):
 
 🧠 **El servidor calcula, los clientes pintan.** La lógica de racha (zonas horarias, huecos, mes navegable) vive en UNA función pura en el backend, con 16 tests. Los tres clientes solo reciben números y los pintan. Cero lógica duplicada = cero divergencia entre plataformas.
 

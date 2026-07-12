@@ -10,7 +10,7 @@
 
 **I asked the AI to close an i18n gap. It discovered the gap didn't exist.**
 
-Chapter two of the **Compute Once, Paint Everywhere** series at AudioRel.
+Chapter two of the **DOPE** series at AudioRel.
 
 Context: we serve children's stories in 20 languages. An architecture audit flagged that our web app was missing the Hebrew, Danish and Norwegian dictionaries — our 2026 expansion markets. Priority 1: add them.
 
@@ -40,7 +40,7 @@ How much dead code is lying to your audits right now?
 
 **Le pedí a la IA que cerrara un hueco de i18n. Descubrió que el hueco no existía.**
 
-Segundo capítulo de la serie **Compute Once, Paint Everywhere** en AudioRel.
+Segundo capítulo de la serie **DOPE** en AudioRel.
 
 Contexto: servimos cuentos en 20 idiomas. Una auditoría de arquitectura señaló que a la web le faltaban los diccionarios de hebreo, danés y noruego — nuestros mercados de expansión 2026. Prioridad 1: añadirlos.
 

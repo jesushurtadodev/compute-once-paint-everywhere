@@ -1,12 +1,14 @@
-# Compute Once, Paint Everywhere
+# DOPE — Decide Once, Paint Everywhere
 
-**A production-tested pattern for shipping features across backend + iOS + Android + web with AI agents — from one engineer's real codebase, scars included.**
+**A production-tested architecture for shipping features across backend + iOS + Android + web with AI agents — from one engineer's real codebase, scars included.**
 
-This is not a framework. It's a **playbook + an executable Claude Code skill + the story of how it evolved**, extracted from [AudioRel](https://www.audiorel.com) — an AI-powered audio stories platform for children in 20 languages, built and operated by a single engineer with AI agents (Claude Code).
+This is not a framework. It's a **[paper](PAPER.md) + a playbook + an executable Claude Code skill + the story of how it evolved**, extracted from [AudioRel](https://www.audiorel.com) — an AI-powered audio stories platform for children in 20 languages, built and operated by a single engineer with AI agents (Claude Code).
 
-The name echoes Java's "write once, run anywhere" — but the unit of reuse isn't code, it's **computation**:
+> **Every decision is made once, on the server. The clients only paint.**
 
-> **The server computes once. The clients just paint.**
+A *decision* is anything that could differ between platforms if each did it itself — a computation, a **validation**, a **gate**, a **canonicalization**. All of them live in one tested place; the clients are mirrors that render the verdict. A mirror can't drift from the truth, because it doesn't own it.
+
+**COPE — "Compute Once, Paint Everywhere" — was the first name, and it's the *compute* case of DOPE.** We discovered the pattern computing a listening streak (chapter 1); then a validation ("that's not a real name"), a canonicalization (favorites), a gate (daily limit) turned out to be the *same shape*. The umbrella is **Decide** Once; **Compute** is one of its letters. Read the full argument — and how DOPE differs from microservices — in **[the paper](PAPER.md)**.
 
 ## Why this exists
 

@@ -1,6 +1,6 @@
 # Post 6 — "My test suite was green. It was also lying."
 
-> Capítulo 6 de la serie Compute Once, Paint Everywhere.
+> Capítulo 6 de la serie DOPE.
 > Publicar cuando la feature de favoritos autenticados cierre en verde REAL.
 > Rellenar [PENDIENTE]. Es el capítulo de "silence is not success" aplicado a los tests.
 
@@ -10,7 +10,7 @@
 
 **My cross-platform test suite passed. Then I read it, and it had never been able to fail.**
 
-Chapter six of the Compute Once, Paint Everywhere series at AudioRel.
+Chapter six of the DOPE series at AudioRel.
 
 Context: I'd shipped a "favorite a story" feature across three platforms and written the acceptance test my own methodology demands — the same user marks a favorite on one surface, it must appear on the other two. Green checkmark. Done, by my own definition.
 
@@ -36,7 +36,7 @@ Your CI is green. When did you last read a test and ask: *could this ever have f
 
 **Mi suite de tests cross-platform pasó. Luego la leí, y nunca había podido fallar.**
 
-Sexto capítulo de la serie Compute Once, Paint Everywhere en AudioRel.
+Sexto capítulo de la serie DOPE en AudioRel.
 
 Contexto: había sacado una feature de "marcar cuento como favorito" en tres plataformas y escrito el test de aceptación que mi propia metodología exige — el mismo usuario marca favorito en una superficie, debe aparecer en las otras dos. Check verde. Hecho, según mi propia definición.
 
