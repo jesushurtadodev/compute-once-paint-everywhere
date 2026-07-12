@@ -1,5 +1,7 @@
 # DOPE — Decide Once, Paint Everywhere
 
+### *It's not done until it's **DopeDone**.*
+
 **A production-tested architecture for shipping features across backend + iOS + Android + web with AI agents — from one engineer's real codebase, scars included.**
 
 This is not a framework. It's a **[paper](PAPER.md) + a playbook + an executable Claude Code skill + the story of how it evolved**, extracted from [AudioRel](https://www.audiorel.com) — an AI-powered audio stories platform for children in 20 languages, built and operated by a single engineer with AI agents (Claude Code).

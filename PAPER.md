@@ -12,7 +12,7 @@ Most "architecture" advice is about how to split the **server**. This paper is a
 
 A "decision" is anything that could differ between platforms if each platform did it itself: a computation, a validation, a gate, a canonicalization, a permission. In DOPE all of them live in exactly one place — a pure, tested function on the server — and iOS, Android and web are **mirrors** that render the verdict. Because a mirror doesn't own the truth, it cannot drift from it and cannot lie about it.
 
-DOPE is the architecture of a **single engineer with many client surfaces**, multiplied by AI agents. Its companion, **DONE**, is how you prove a story shipped correctly across all of them. Together: **DOPE-DONE**.
+DOPE is the architecture of a **single engineer with many client surfaces**, multiplied by AI agents. Its companion, **DONE**, is how you prove a story shipped correctly across all of them. Together they earn a verb: **DopeDone** — *it's not done until it's DopeDone.*
 
 ---
 
@@ -49,11 +49,13 @@ Where they **differ** most sharply: on the **decision layer**, DOPE is the *oppo
 
 ---
 
-## DOPE-DONE: a story isn't done because it builds
+## DopeDone: a story isn't done because it builds
 
-DOPE tells you *where* a decision lives. **DONE** tells you *how you prove* the story shipped correctly across every surface. The two are inseparable: the reason to centralize the decision is so you can write **one** proof that all clients honor it.
+DOPE tells you *where* a decision lives. **DONE** tells you *how you prove* the story shipped correctly across every surface. The two are inseparable — the reason to centralize the decision is so you can write **one** proof that all clients honor it — and together they earn a verb: **DopeDone**.
 
-> A user story is **DONE** when an automated test shows the **same user** performing the action **identically on all surfaces**, AND state written on one surface renders on the others — because the server is the single source of truth, this is the only test that actually validates the pattern.
+Agile already has *"done-done"*: finished for real, not merely claimed. **DopeDone is the DOPE-native version of done-done** — done, *and* proven across surfaces the way the architecture demands. It's the question you ask before shipping: not *"does it build?"* but *"is it DopeDone?"*
+
+> A user story is **DopeDone** when an automated test shows the **same user** performing the action **identically on all surfaces**, AND state written on one surface renders on the others — because the server is the single source of truth, this is the only test that actually validates the pattern.
 
 ### The per-story template
 
