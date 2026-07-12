@@ -28,7 +28,8 @@ For **each** client (Android first — fastest loop — then iOS, then web), a s
 3. **Graceful fallback** if the endpoint isn't deployed yet.
 4. **Analytics**: emit through the fan-out helper with **identical event names + props** (stable IDs, never localized labels; intent events at-tap, not after the 202).
 5. Build with the pinned toolchain, register new files, translate new strings to all locales.
-6. PR against `main`.
+6. **Author this client's render-rung flow — it ships WITH the client, not later.** Mobile → a `.maestro/flows/<feature>.yaml`; web → a Playwright spec. `assertVisible` by a **multilingual regex** (`".*audiocuentos.*|.*historias.*"`, never a fixed localized string — the rule-27 pitfall), plus a mandatory **fallback flow** that stubs the endpoint to 404 and asserts the screen doesn't crash and shows no error UI / "0". A mobile render rung without Maestro automation is a human eyeballing a build — one rung below DopeDone.
+7. PR against `main`.
 
 ## STEP 5 — Run the proof (the rungs → DopeDone)
 
@@ -36,7 +37,7 @@ Execute the QA plan from `/dope-plan`, in order. Each must be **non-vacuous** (a
 
 1. **Unit** — green (already from Step 1).
 2. **Contract** — headless: sign in as the shared test identity, fire **each client's exact payload**, assert convergence (`mark[A] → visible[B] · visible[C]`). Must discriminate — run it before the fix to watch it fail red.
-3. **Render** — the shared identity (a minted custom token / auth-seed) drives web (Playwright) and iOS/Android (Maestro); state written on one surface is asserted on the others.
+3. **Render** — the shared identity (a minted custom token / auth-seed) drives web (Playwright) and iOS/Android (**Maestro, on a real emulator/simulator — automated, not a human eyeballing the build**); `assertVisible` by multilingual regex; state written on one surface is asserted on the others. Run the **fallback flow too** (endpoint stubbed → 404): proving the screen survives a missing backend is what lets the client PR merge before the deploy — assert it, don't assume it.
 4. **Guardian** — verify the server rejects a bypassed client (curl without the client-side guard).
 5. **Eval** — *only for `model`-tagged decisions.* Run the eval suite from the plan: deterministic invariants first (schema/whitelist/structure), then the LLM-as-judge over the golden set returning **structured, evidence-bearing** verdicts. It passes only if the aggregate score clears the human-set threshold — the CI gate fails the build otherwise. The judge fan-out runs on the planned `/dope-orchestrate` harness (the eval is its first application). Non-vacuous applies hardest here: a judge that returns `pass` with no evidence is the lying test.
 
