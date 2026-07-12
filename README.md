@@ -55,7 +55,7 @@ playbook.md              The pattern in full: principles, preconditions, case st
 skill/dope-plan.md       Claude Code skill: PLAN phase — need → contract + QA plan
 skill/dope-code.md       Claude Code skill: CODE phase — execute + prove until DopeDone (evolves feature-xplat)
 skill/feature-xplat.md   Claude Code skill: the original cross-platform fan-out (now the core of /dope-code)
-skill/cope-post.md       Claude Code skill: how the chapters + posts themselves get written (structure, honest clickbait, visual signature)
+skill/dope-post.md       Claude Code skill: how the chapters + posts themselves get written (structure, honest clickbait, visual signature)
 wiki/                    The article series (English + Spanish)
 ```
 

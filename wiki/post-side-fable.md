@@ -69,5 +69,5 @@ Fable no sustituyó mi criterio. Lo multiplicó por 114.
 
 # 📌 PRIMER COMENTARIO
 > 🇪🇸 Versión en español 👇
-> 📖 El patrón, el playbook y los skills, open source: https://github.com/jesushurtadodev/compute-once-paint-everywhere
+> 📖 El patrón, el playbook y los skills, open source: https://github.com/jesushurtadodev/dope-architecture
 > 🌐 https://jesushurtado.dev

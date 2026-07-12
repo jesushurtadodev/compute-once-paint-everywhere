@@ -60,5 +60,5 @@ Tu CI está en verde. ¿Cuándo leíste por última vez un test y preguntaste: *
 
 # 📌 PRIMER COMENTARIO
 > 🇪🇸 Versión en español 👇
-> 📖 Playbook + skill + DoD, open source: https://github.com/jesushurtadodev/compute-once-paint-everywhere
+> 📖 Playbook + skill + DoD, open source: https://github.com/jesushurtadodev/dope-architecture
 > 🌐 https://jesushurtado.dev

@@ -90,5 +90,5 @@ La lección quedó codificada (en la memoria del agente, no en la de un humano):
 
 # 📌 PRIMER COMENTARIO
 > 🇪🇸 Versión en español 👇
-> 📖 Playbook + skill, open source: https://github.com/jesushurtadodev/compute-once-paint-everywhere
+> 📖 Playbook + skill, open source: https://github.com/jesushurtadodev/dope-architecture
 > 🌐 https://jesushurtado.dev

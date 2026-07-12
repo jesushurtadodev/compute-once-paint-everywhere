@@ -1,8 +1,8 @@
-# /cope-post — Write a chapter + LinkedIn post for your build-in-public series
+# /dope-post — Write a chapter + LinkedIn post for your build-in-public series
 
 > A [Claude Code](https://claude.com/claude-code) skill: the style guide behind
 > the *DOPE* series, as an executable workflow.
-> Drop into `.claude/commands/cope-post.md` and run `/cope-post <what happened>`.
+> Drop into `.claude/commands/dope-post.md` and run `/dope-post <what happened>`.
 > Adapt names and paths; keep the rules.
 
 ## The golden rule
